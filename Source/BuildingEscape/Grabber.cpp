@@ -66,7 +66,7 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 }
 
-FHitResult GetFirstPhysicsBodyInReach() const
+FHitResult UGrabber::GetFirstPhysicsBodyInReach() const
 {
 	FVector PlayerViewLocation;
 	FRotator PlayerViewRotation;
