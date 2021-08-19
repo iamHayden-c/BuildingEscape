@@ -47,8 +47,8 @@ void UGrabber::Grab()
 {
 	UE_LOG(LogTemp, Warning, TEXT("Grabber Pressed"));
 
-	// Try to reach any actor with a physics handle collison
-
+	GetFirstPhysicsBodyInReach();
+	
 	// If we reach an actor, then attach the physics handle
 	// TODO attach physics handles
 }
